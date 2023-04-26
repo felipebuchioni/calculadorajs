@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+}
+
+:root {
+    --bg-color: white;
+    --border-color: black;
+    --hover-btn-color: rgb(49, 49, 49);
+    --hover-btn-font-color: white;
+    --font-color: black;
+    --key-font-color: white;
+    --primary-color: rgb(238, 45, 78);
+    --hover-key-color: rgb(187, 23, 50);
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+main{
+    
+    margin: 150px auto;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#switchTheme{
+    color: var(--font-color);
+    padding: 5px 65px;
+    background-color: var(--bg-color);
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    font-weight: 900;
+    font-size: 12pt;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#switchTheme:hover{
+    background-color: var(--hover-btn-color);
+    color: var(--hover-btn-font-color);
+}
+
+#calcInput{
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid var(--border-color);
+    outline: none;
+    padding: 5px 25px;
+    font-size: 22pt;
+    font-weight: 900;
+    text-align: right;
+}
+
+.titleDiv{
+    color: var(--font-color);
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.calcKey{
+    color: var(--key-font-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 23.3%;
+    height: 70px;
+    font-size: 19pt;
+    font-weight: 800;
+    background-color: var(--primary-color);
+    transition: 0.2s;
+}
+
+#equalBtn{
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 23.3%;
+    height: 70px;
+    font-size: 19pt;
+    font-weight: 800;
+    background-color: var(--primary-color);
+    color: var(--key-font-color);
+    transition: 0.2s;
+}
+
+#equalBtn:hover{
+    background-color: var(--hover-key-color);
+}
+
+.calcKey:hover{
+    background-color: var(--hover-key-color);
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyBtn{
+    color: var(--font-color);
+    height: 50px;
+    padding: 5px 20px;
+    font-size: 12pt;
+    font-weight: 900;
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-right: 0px;
+    border-radius: 5px 0px 0px 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#copyBtn:hover{
+    background-color: var(--hover-btn-color);
+    color: var(--hover-btn-font-color);
+}
+
+#result{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 50px;
+    border: 2px solid var(--border-color);
+    border-radius: 0px 5px 5px 0px;
+    text-align: right;
+    color: var(--font-color);
+    font-size: 22pt;
+    font-weight: 900;
+    padding: 5px 25px;
+}
+
+.sucess{
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
